@@ -1,7 +1,50 @@
-<script>
-setTimeout(() => {
-document.getElementById('mySound').play(); 
-}, 5000)
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<audio id="mySound" src="lmao.mp3"></audio>
+    <title>nil</title>
+
+    <!-- Bootstrap 4.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <!-- cookiealert styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
+    <script src="particles.js"></script>
+</head>
+<body oncontextmenu="false">
+
+<!-- <div class="container">
+
+    <div class="card" style="margin-top: 70px">
+        <div class="card-body">
+            <div id="fillme"></div>
+        </div>
+    </div>
+
+</div> -->
+</script>
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+    <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website.
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies" onclick="hookfunc();">
+        I agree
+        <script>
+        function hookfunc(){
+        document.getElementById('mySound').play(); 
+        };   
+        </script>
+        <audio id="mySound" src="lmao.mp3"></audio>
+    </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+
+<!-- JAVASCRIPT -->
+
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+</body>
+</html>
